@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+<form action="login" method="POST">
+
+	{% csrf_token %}
+
+	Enter Username : <input type="text" name="username"><br>
+	Enter Password : <input type="text" name="password"><br>
+	
+	<input type="submit">
+	{% for message in messages %}
+
+	<h3>{{message}}</h3>
+
+	{% endfor %}
+
+</form>
+</body>
+</html>
