@@ -1,4 +1,5 @@
-
+{% load static %}
+{% static "images" as baseUrl %}
 
 
 <!DOCTYPE html>
@@ -110,13 +111,13 @@
 				
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="background_image" style="background-image:url(images/head.jpg)"></div>
+					<div class="background_image" style="background-image:url({% static 'images/head.jpg'%})"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content">
-										<div class="home_title"><h2></h2></div>
+										<div class="home_title"><h2>Let us take you away</h2></div>
 									</div>
 								</div>
 							</div>
